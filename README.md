@@ -1,2 +1,2 @@
 # PDIH
-Repositorio donde se realizaran las entregas de las practicas y los seminarios
+Repositorio donde se realizarán las entregas de las prácticas y los seminarios.
