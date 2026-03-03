@@ -14,6 +14,8 @@ mov ah, 08h
 int 21h
 ```
 La función 08h: espera a que se pulse una tecla 
+
 La función 09h: muestra el texto
+
 Finalmente el resutado será:
 <img width="1020" height="674" alt="image" src="https://github.com/user-attachments/assets/d0a8578d-8c1a-4455-bf9a-415c5902b7f1" />
