@@ -1,7 +1,7 @@
 
 # Seminario 1 – Compilación, cambios y ejecución del archivo Hola
 
-## Paso 1: Compilamos con Hola con C.bat
+## Paso 1: Compilamos Hola con C.bat
 Usando c hola. En DOSBox, al escribir C en la línea de comandos, el sistema ejecuta automáticamente el archivo C.BAT, ya que en DOS no es necesario indicar la extensión .BAT para lanzar un archivo ejecutable.
 <img width="996" height="640" alt="image" src="https://github.com/user-attachments/assets/3f392006-5af7-428c-8305-0519e720d807" />
 Al ejecutar nos sale hola
