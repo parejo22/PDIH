@@ -37,6 +37,11 @@ Para mostrar el funcionamiento me ayudaré de setvideomode(), para asi poder dem
 ---
 
 ## Ejercicio 5 textcolor():
+Está función cambia el color del texto que escribimos por terminal:
+
+
+---
+
 ## Ejercicio 6 textbackground():
 ## Ejercicio 7 clrscr():
 ## Ejercicio 8 cputchar():
