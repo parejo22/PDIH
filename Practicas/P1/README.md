@@ -142,6 +142,9 @@ void dibujarPixel(int posX, int posY, unsigned char color){
 ---
 ## Ejercicio 11 Implementar una función para dibujar recuadros en la pantalla (en modo texto):
 
+El programa dibuja un recuadro en modo texto usando la interrupción 0x10 de la BIOS. Primero coloca el cursor en cada posición con AH=02, y luego imprime caracteres con borde usando AH=09 y colores combinados de fondo y texto. Las líneas horizontales y verticales se dibujan con bucles, y las esquinas se colocan manualmente  por entrada de teclado para completar el marco del rectángulo.
+<img width="952" height="596" alt="image" src="https://github.com/user-attachments/assets/e55fd8e3-d101-4680-acc2-eb758951ad86" />
+
 ---
 ## Ejercicio 12 Programa que realice dibujos sencillos en pantalla (en modo gráﬁco):
 
