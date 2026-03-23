@@ -147,9 +147,10 @@ El programa dibuja un recuadro en modo texto usando la interrupción 0x10 de la 
 
 ---
 ## Ejercicio 12 Programa que realice dibujos sencillos en pantalla (en modo gráﬁco):
-Dibujo realizado utilizando funciones de otros ejercicios, pixel para hacer los dibujos, pausa y cambio de modo de video. Son 
+Dibujo realizado utilizando funciones de otros ejercicios, pixel para hacer los dibujos, pausa y cambio de modo de video.
 
-<img width="1003" height="635" alt="image" src="https://github.com/user-attachments/assets/6ee62056-5420-41a4-8b5a-ad3a14bf1439" />
+<img width="1003" height="635" alt="image" src="https://github.com/user-attachments/assets/152affd3-e48a-4313-991d-78eca5d9b51d" />
+
 
 ---
 ## Ejercicio 13 Programa que realice un dibujo sencillo de tipo “ascii art” (en modo texto):
