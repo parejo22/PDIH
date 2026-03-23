@@ -37,8 +37,23 @@ Para mostrar el funcionamiento me ayudaré de setvideomode(), para asi poder dem
 ---
 
 ## Ejercicio 5 textcolor():
-Está función cambia el color del texto que escribimos por terminal:
+Está función cambia el color del texto que escribimos por terminal: 
+```c
+void textcolor(unsigned char color) {
+    ctexto = color;
+}
+int main() {
+    printf("Texto normal en la pantalla:\n");
 
+    // Cambio solo el color del texto,,,,,,colores, negro=0,azul=1,verde=2,cyan=3, rojo,4magenta=5, marron=6, grisclaro=7,blanco=15
+    textcolor(4); // Rojo
+    cputchar('o');
+
+    return 0;
+}
+```
+
+<img width="598" height="340" alt="image" src="https://github.com/user-attachments/assets/0f217239-c434-455c-a0dd-3bda5570c375" />
 
 ---
 
