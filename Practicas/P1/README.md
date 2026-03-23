@@ -59,16 +59,19 @@ int main() {
 
 ## Ejercicio 6 textbackground():
 Ejercicio muy similar al anterior, pero esta vez nos enfocamos en el color de fondo del texto.
+
 ```c
 void fondocolor(unsigned char color2){
     cfondo = color2;
 }
 ```
+
 <img width="986" height="138" alt="image" src="https://github.com/user-attachments/assets/9ac4078c-7f14-4524-8595-24c272610fe9" />
 
 ---
 ## Ejercicio 7 clrscr():
 Hay distintas maneras de realizar este ejercicio, en mi caso he decidido, utilizar la funcion para obtener el modo de video actual y seguidamente cambiar un set del mismo modo de video de esta manera limpiamos la pantalla.
+
 <img width="1018" height="676" alt="image" src="https://github.com/user-attachments/assets/856befd7-fb47-49b9-be65-d41f76dee872" />
 <img width="1019" height="199" alt="image" src="https://github.com/user-attachments/assets/ab12943e-db61-4364-98eb-f631f482b18a" />
 
@@ -112,9 +115,29 @@ int main() {
 ```
 ---
 ## Ejercicio 9 getche():
+Este ejercicio muestra la última tecla pulsada por teclado.
+
+<img width="982" height="141" alt="image" src="https://github.com/user-attachments/assets/23654afa-2ee2-490f-851a-26a0c15d1585" />
 
 ---
 ## Ejercicio 10 pixel():
+Pixel() dibuja un pixel en modo gráfico (la función recibirá la coordinada x,y y el color del punto).
+
+```c
+void dibujarPixel(int posX, int posY, unsigned char color){
+    union REGS regs;
+
+    regs.x.cx = posX;   
+    regs.x.dx = posY;   
+    regs.h.al = color;  
+    regs.h.ah = 0x0C;   
+
+    int86(0x10, &regs, &regs);
+}
+```
+
+<img width="952" height="596" alt="image" src="https://github.com/user-attachments/assets/2f4f9f19-90b1-4795-bd4b-fec9d4c08dc0" />
+
 
 ---
 ## Ejercicio 11 Implementar una función para dibujar recuadros en la pantalla (en modo texto):
