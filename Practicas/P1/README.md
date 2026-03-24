@@ -156,48 +156,9 @@ Dibujo realizado utilizando funciones de otros ejercicios, pixel para hacer los 
 ## Ejercicio 13 Programa que realice un dibujo sencillo de tipo “ascii art” (en modo texto):
 Por último, este programa se realiza mediante el uso de las funciones cputchar para poner todos los caracteres y el clrscr para limpiar la pantalla.
 Algunos ejemplos:
-```c
-        const char *dibujo[] = {
-        "   /^ ^\\",
-        "  / 0 0 \\",
-        "  V\\ Y /V",
-        "   / - \\",
-        "  |    \\",
-        "  || (__V"
-    };
-```
+
 <img width="789" height="356" alt="image" src="https://github.com/user-attachments/assets/411bc00b-a318-4114-adec-975329be3ddb" />
-```c
-        const char *dibujo[] = {
 
-        "________$$$$..",
-        "______$$$$$$$$$",
-        "______$$$$$$$_$",
-        "_____$$$$$$$$$$",
-        "______$$$$$$$$$$",
-        "_____$$$$$$_$$$$$",
-        "____$$$$$$$_____$$$",
-        "____$$$$$$$$_____$",
-        "____$$$$$$$$$$",
-        "_____$$$$$$$$$$",
-        "_____$$$$$$$$$$$",
-        "______$$$$$$$$$$$",
-        "_$$$$___$$$$$$$$$",
-        "__$$$$$$$$$$$$$$$",
-        "_$$$$$$$$$$$$$$$",
-        "$$$$$$$$$$$$$",
-        "__$__$$$$$$",
-        "____$$$$$$",
-        "____$$$$$",
-        "___$$$$$$_____$",
-        "___$$$$$$___$$_$$",
-        "____$$$$$___$__$$",
-        "____$$$$$______$$",
-        "_____$$$$$____$$$",
-        "_______$$$$$$$$$",
-
-    };
-```
 <img width="985" height="677" alt="image" src="https://github.com/user-attachments/assets/0df07a79-8b9a-42b5-a59b-3d0643ba9b94" />
 
 
