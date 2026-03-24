@@ -162,7 +162,3 @@ Algunos ejemplos:
 <img width="985" height="677" alt="image" src="https://github.com/user-attachments/assets/0df07a79-8b9a-42b5-a59b-3d0643ba9b94" />
 
 
-
-
-.....
-
