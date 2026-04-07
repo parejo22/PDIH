@@ -184,7 +184,7 @@ Se ha desarrollado un juego básico tipo Pong que incluye:
 - Detección de colisiones
 - Fin de partida
 
-Código en el fichero pong.c 
+Código [Ver código del Pong en C](https://github.com/parejo22/PDIH/blob/main/Practicas/P2/pong.c)
 
 Explicación
 1. Librerias:
