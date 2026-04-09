@@ -12,7 +12,7 @@
 - Resistencias
 - Pulsador
 - Cables
-- 
+  
 ## Ejercicio 1:
 
 Código:
