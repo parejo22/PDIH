@@ -2,7 +2,7 @@
 
 ---
 
-# 1. Introducción
+## Introducción
 
 Un **Loadable Kernel Module (LKM)** es un archivo que contiene código objeto que puede cargarse en el kernel de Linux en tiempo de ejecución.  
 
@@ -16,4 +16,10 @@ Los módulos del kernel se utilizan principalmente para:
 
 Los módulos se ejecutan en el **espacio del kernel**, mientras que las aplicaciones normales se ejecutan en el **espacio de usuario**.
 
+### Objetivos
+  
+- Conocer cómo funciona el sistema de módulos cargables del kernel de Linux
+- Hacer un módulo sencillo.
+    
 ---
+## 1. Preparación del sistema para construir LKMs
