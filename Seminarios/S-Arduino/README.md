@@ -3,7 +3,7 @@
 1. Conocer la plataforma arduino
 2. Describir un kit de programación para Arduino
 3. Instalar y realizar sencillos programas mediante el IDE de programación basado en el lenguaje Processing de Arduino.
-4. Conocer herramientas adicionales para el diseño de prototipos en Arduino (Fritzing, Tinkercard...).
+4. Conocer herramientas adicionales para el diseño de prototipos en Arduino (Fritzing, Tinkercad...).
 
 ### Material utilizado:
 - Arduino UNO
@@ -37,6 +37,7 @@ void loop() {
   delay(1500);
 }
 ```
+Simulación y diseño en Tinkercad
 <img width="1772" height="713" alt="image" src="https://github.com/user-attachments/assets/a3bc4616-32e5-465c-b54b-4dd1f5ed681a" />
 
 ## Ejercicio 2:
@@ -60,5 +61,5 @@ void loop() {
   }
 }
 ```
-
+Simulación y diseño en Tinkercad
 <img width="1759" height="623" alt="image" src="https://github.com/user-attachments/assets/3b8a8764-729b-49f1-8b0c-0001e3c8c6d5" />
