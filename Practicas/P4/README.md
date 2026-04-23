@@ -51,3 +51,13 @@ En la segunda página se ha añadido una gráfica sencilla. Los ejes de la gráf
 Para separar ambas páginas se ha utilizado el operador `showpage`, que indica el final de una página y el inicio de la siguiente.
 [Enlace al código](https://github.com/parejo22/PDIH/blob/main/Practicas/P4/datos.ps)
 <img width="1838" height="943" alt="image" src="https://github.com/user-attachments/assets/d509c31d-a193-48d0-85fc-22a6b4cad3d0" />
+
+## Cambio de formato
+Para cambiar de formato .ps a jpg o pdf se han usado los siguientes comandos:
+
+`ps2pdf archivo.ps` 
+
+`convert archivo.pdf archivo.jpg`
+<img width="988" height="393" alt="image" src="https://github.com/user-attachments/assets/277e550b-074c-407e-9b4f-5ea6f6cf8b4b" />
+
+<img width="988" height="393" alt="image" src="https://github.com/user-attachments/assets/e67c5fb5-c7bd-4eda-bb5b-81f787bdb551" />
