@@ -13,3 +13,6 @@ Para hacer el siguiente ejercicio se han utilzado 3 circulos y un rectángulo pa
 [Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P4/arboles.ps)
 
 <img width="784" height="996" alt="image" src="https://github.com/user-attachments/assets/78eb3918-8101-48da-a20d-528dced1dc02" />
+
+### Tarjeta 
+<img width="772" height="462" alt="image" src="https://github.com/user-attachments/assets/66d5f510-dd88-432e-8227-78ab452e9ef7" />
