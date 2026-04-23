@@ -109,7 +109,34 @@ void loop() {
   }
 }
 ```
+### Código con lógica de input_pullup para no usar tanto cable
 
+```c
+int ledRojo = 11;
+int ledAmarillo = 12;
+int ledVerde = 13;
+int boton = 7;
 
+void setup() {
+  pinMode(ledRojo, OUTPUT);
+  pinMode(ledAmarillo, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
+  pinMode(boton, INPUT_PULLUP);
+}
+
+void loop() {
+  int estado = digitalRead(boton);
+
+  if (estado == LOW) { // ← botón presionado
+    digitalWrite(ledRojo, HIGH);
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, LOW);
+  } else { // botón suelto
+    digitalWrite(ledRojo, LOW);
+    digitalWrite(ledAmarillo, HIGH);
+    digitalWrite(ledVerde, HIGH);
+  }
+}
+```
 
 
