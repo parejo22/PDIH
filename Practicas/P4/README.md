@@ -40,3 +40,14 @@ Se han dibujado varios círculos concéntricos de diferentes colores empleando e
 
 [Enlace al código](https://github.com/parejo22/PDIH/blob/main/Practicas/P4/sonrisa.ps)
 <img width="572" height="536" alt="image" src="https://github.com/user-attachments/assets/7539e36f-b5a1-47bc-b375-2b53f0fb8776" />
+
+### Tabla, texto y gráfica en dos páginas
+En este ejercicio se han generado dos páginas dentro del mismo archivo PostScript.
+
+En la primera página se ha dibujado una tabla con datos inventados. Para ello se han utilizado líneas (`moveto`, `lineto` y `stroke`) para formar la estructura de la tabla, y el operador `show` para insertar los datos en cada celda.
+
+En la segunda página se ha añadido una gráfica sencilla. Los ejes de la gráfica se han creado mediante líneas, y la representación de los datos se ha realizado dibujando circulos enlazados por líneas rectas.
+
+Para separar ambas páginas se ha utilizado el operador `showpage`, que indica el final de una página y el inicio de la siguiente.
+[Enlace al código](https://github.com/parejo22/PDIH/blob/main/Practicas/P4/datos.ps)
+<img width="1838" height="943" alt="image" src="https://github.com/user-attachments/assets/d509c31d-a193-48d0-85fc-22a6b4cad3d0" />
