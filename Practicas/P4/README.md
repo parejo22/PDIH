@@ -60,4 +60,3 @@ Para cambiar de formato .ps a jpg o pdf se han usado los siguientes comandos:
 `convert archivo.pdf archivo.jpg`
 <img width="988" height="393" alt="image" src="https://github.com/user-attachments/assets/277e550b-074c-407e-9b4f-5ea6f6cf8b4b" />
 
-<img width="988" height="393" alt="image" src="https://github.com/user-attachments/assets/e67c5fb5-c7bd-4eda-bb5b-81f787bdb551" />
