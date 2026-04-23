@@ -71,6 +71,8 @@ void loop() {
   digitalWrite(ledVerde, LOW);
 }
 ```
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/d56f850d-1024-489f-b375-642975ffa0e9" />
+
 ## Proyecto 2: LED con pulsador
 
 ### Descripción
@@ -138,5 +140,6 @@ void loop() {
   }
 }
 ```
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/4725dee8-864a-44bd-b657-7318d4362e5a" />
 
 
