@@ -15,7 +15,7 @@ Para realizar el siguiente ejercicio se han utilizado 3 círculos y un rectángu
 ![Árboles](https://github.com/user-attachments/assets/78eb3918-8101-48da-a20d-528dced1dc02)
 
 ### Tarjeta
-Para este ejercicio me he inspirado en los Juegos Olímpicos de Barcelona. El logo consiste en 5 aros simples de diferentes colores, con los que he jugado un poco usando las coordenadas. Para el texto he utilizado `scalefont` para ajustar el tamaño.
+Para este ejercicio me he inspirado en los Juegos Olímpicos de Barcelona y en cómo serían las tarjetas que llevarían colgadas las personas que entraban al recinto. El logo consiste en 5 aros simples de diferentes colores, con los que he jugado un poco usando las coordenadas. Para el texto he utilizado `scalefont` para ajustar el tamaño.
 
 [Enlace al código](https://github.com/parejo22/PDIH/blob/main/Practicas/P4/tarjeta.ps)
 
