@@ -248,7 +248,7 @@ void loop() {
 ### Descripción
 
 Se ha implementado un sistema que detecta la cantidad de luz mediante un fotosensor (LDR).
-Un LED varía su intensidad en función de la luz ambiente utilizando una señal PWM.
+Un LED varía su intensidad en función de la luz ambiente.
 
 ### Materiales utilizados
 
