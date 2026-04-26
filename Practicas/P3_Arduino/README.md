@@ -243,3 +243,50 @@ void loop() {
   delay(100);
 }
 ``` 
+## Proyecto 5: Sensor de luz con fotosensor
+
+### Descripción
+
+Se ha implementado un sistema que detecta la cantidad de luz mediante un fotosensor (LDR).
+Un LED varía su intensidad en función de la luz ambiente utilizando una señal PWM.
+
+### Materiales utilizados
+
+- Arduino
+- LDR (fotosensor)
+- Resistencia de 10kΩ
+- LED
+- Resistencia de 220Ω
+- Protoboard
+- Cables de conexión
+
+### Esquema del circuito
+
+<img width="1499" height="858" alt="Captura desde 2026-04-26 13-29-27" src="https://github.com/user-attachments/assets/87679668-ecb0-4c18-b94d-5cf67e33f93e" />
+<img width="1499" height="858" alt="Captura desde 2026-04-26 13-29-35" src="https://github.com/user-attachments/assets/28e6a0fb-a32c-4db1-a833-192e5bf9b649" />
+
+El valor minimo es un poco superior a 0, ya que al hacer el circuito físico era casi imposible apagar el led por completo. Por lo que subiendo un poco el valor es más facil ver el correcto funcionamiento del circuito.
+
+### Código
+
+```c
+int ldrPin = A0;
+int ledPin = 5;
+Serial.begin(9600);
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  int valor = analogRead(ldrPin);
+   Serial.println(distance);
+  // Mapear a brillo LED
+  int brillo = map(valor, 300, 1023, 0, 255);
+
+  analogWrite(ledPin, brillo);
+
+  delay(100);
+}
+}
+```
