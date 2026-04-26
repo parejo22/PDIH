@@ -188,7 +188,9 @@ void loop() {
   }
 }
 ```
+
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/df14f183-b920-4ee9-90a9-859d84d9d87e" />
+
 [Ver demo](https://github.com/parejo22/PDIH/blob/main/Practicas/P3_Arduino/fantastico.mp4)
 
 ## Proyecto 4: Sensor de distancia con buzzer
@@ -245,7 +247,9 @@ void loop() {
   delay(100);
 }
 ```
+
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/75bdac06-cc7d-4b48-be08-0ec174486ce0" />
+
 [Ver demo](https://github.com/parejo22/PDIH/blob/main/Practicas/P3_Arduino/distancia.mp4)
 
 ## Proyecto 5: Sensor de luz con fotosensor
@@ -340,5 +344,7 @@ void loop() {
   }
 }
 ```
+
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/25fd5b15-8be1-44c3-8a9a-31f2bf82875d" />
+
 [Ver demo](https://github.com/parejo22/PDIH/blob/main/Practicas/P3_Arduino/motor.mp4)
