@@ -290,3 +290,48 @@ void loop() {
 }
 }
 ```
+
+## Proyecto 6: Control de servo con pulsador
+
+### Descripción
+
+Se ha desarrollado un sistema en el que un servo motor se activa al pulsar un botón.
+Cuando el botón está presionado, el servo gira a una posición determinada; en caso contrario, vuelve a su posición inicial.
+
+### Materiales utilizados
+
+- Arduino
+- Servo motor
+- Pulsador
+- Protoboard
+- Cables de conexión
+
+### Esquema del circuito
+
+<img width="1499" height="858" alt="Captura desde 2026-04-26 20-26-32" src="https://github.com/user-attachments/assets/d9c2d1d2-9a98-4e8a-a3a7-eb28360503b9" />
+<img width="1499" height="858" alt="image" src="https://github.com/user-attachments/assets/83e6e383-1622-49b4-b646-d70d2b1b8b8b" />
+
+
+El valor minimo es un poco superior a 0, ya que al hacer el circuito físico era casi imposible apagar el led por completo. Por lo que subiendo un poco el valor es más facil ver el correcto funcionamiento del circuito.
+
+### Código
+
+```c
+#include <Servo.h>
+
+Servo miServo;
+int boton = 2;
+
+void setup() {
+  miServo.attach(9);
+  pinMode(boton, INPUT_PULLUP);
+}
+
+void loop() {
+  if (digitalRead(boton) == LOW) {
+    miServo.write(90); // gira
+  } else {
+    miServo.write(0);  // posición inicial
+  }
+}
+```
