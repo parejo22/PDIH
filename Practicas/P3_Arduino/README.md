@@ -188,6 +188,7 @@ void loop() {
   }
 }
 ```
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/df14f183-b920-4ee9-90a9-859d84d9d87e" />
 
 ## Proyecto 4: Sensor de distancia con buzzer
 
@@ -242,7 +243,10 @@ void loop() {
 
   delay(100);
 }
-``` 
+```
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/75bdac06-cc7d-4b48-be08-0ec174486ce0" />
+[Ver demo](videos/demo.mp4)
+
 ## Proyecto 5: Sensor de luz con fotosensor
 
 ### Descripción
@@ -290,6 +294,9 @@ void loop() {
 }
 }
 ```
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/c93ce1cd-13b7-46ee-99e3-0b32d9a7e3e1" />
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/83b29d62-066a-4b34-90c8-7c1ceecda1be" />
+[Ver demo](videos/demo.mp4)
 
 ## Proyecto 6: Control de servo con pulsador
 
@@ -312,8 +319,6 @@ Cuando el botón está presionado, el servo gira a una posición determinada; en
 <img width="1499" height="858" alt="image" src="https://github.com/user-attachments/assets/83e6e383-1622-49b4-b646-d70d2b1b8b8b" />
 
 
-El valor minimo es un poco superior a 0, ya que al hacer el circuito físico era casi imposible apagar el led por completo. Por lo que subiendo un poco el valor es más facil ver el correcto funcionamiento del circuito.
-
 ### Código
 
 ```c
@@ -335,3 +340,5 @@ void loop() {
   }
 }
 ```
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/25fd5b15-8be1-44c3-8a9a-31f2bf82875d" />
+[Ver demo](videos/demo.mp4)
