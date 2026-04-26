@@ -272,7 +272,8 @@ Un LED varía su intensidad en función de la luz ambiente.
 ### Esquema del circuito
 
 <img width="1499" height="858" alt="Captura desde 2026-04-26 13-29-27" src="https://github.com/user-attachments/assets/87679668-ecb0-4c18-b94d-5cf67e33f93e" />
-<img width="1499" height="858" alt="Captura desde 2026-04-26 13-29-35" src="https://github.com/user-attachments/assets/28e6a0fb-a32c-4db1-a833-192e5bf9b649" />
+<img width="2048" height="1848" alt="image" src="https://github.com/user-attachments/assets/c3b06675-2501-47df-a422-8077d487cd07" />
+
 
 El valor minimo es un poco superior a 0, ya que al hacer el circuito físico era casi imposible apagar el led por completo. Por lo que subiendo un poco el valor es más facil ver el correcto funcionamiento del circuito.
 
