@@ -142,4 +142,104 @@ void loop() {
 ```
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/4725dee8-864a-44bd-b657-7318d4362e5a" />
 
+## Proyecto 3: Secuencia de LEDs tipo "coche fantástico"
 
+### Descripción
+
+Se ha implementado una secuencia de 4 LEDs que se encienden de forma progresiva de izquierda a derecha y viceversa, simulando el efecto de las luces del coche fantástico.
+
+### Materiales utilizados
+
+- Arduino  
+- 4 LEDs  
+- 4 resistencias de 220Ω  
+- Protoboard  
+- Cables de conexión  
+
+### Esquema del circuito
+
+<img width="1469" height="806" alt="Captura desde 2026-04-26 12-44-17" src="https://github.com/user-attachments/assets/99af4d2a-c0dc-461d-a685-341325563db3" />
+
+### Código
+
+```c
+int leds[] = {2, 3, 4, 5};
+int numLeds = 4;
+
+void setup() {
+  for (int i = 0; i < numLeds; i++) {
+    pinMode(leds[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // Ida
+  for (int i = 0; i < numLeds; i++) {
+    digitalWrite(leds[i], HIGH);
+    delay(100);
+    digitalWrite(leds[i], LOW);
+  }
+
+  // Vuelta
+  for (int i = numLeds - 2; i > 0; i--) {// numleds -2 para que no ilumine de nuevo el ultimo encendido
+    digitalWrite(leds[i], HIGH);
+    delay(100);
+    digitalWrite(leds[i], LOW);
+  }
+}
+```
+
+## Proyecto 4: Sensor de distancia con buzzer
+
+### Descripción
+
+Se ha desarrollado un sistema que mide la distancia a un objeto mediante un sensor ultrasónico.
+En función de la distancia detectada, el buzzer emite un sonido cuya frecuencia varía.
+
+### Materiales utilizados
+
+- Arduino
+- Sensor ultrasónico HC-SR04
+- Buzzer (pasivo)
+- Protoboard
+- Cables de conexión
+
+### Esquema del circuito
+
+<img width="1499" height="858" alt="Captura desde 2026-04-26 19-10-57" src="https://github.com/user-attachments/assets/a9ed00af-ebff-4504-9057-29b7c0fdc294" />
+
+### Código
+
+```c
+const int trigPin = 10;
+const int echoPin = 9;
+const int buzzer = 8;
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+}
+
+void loop() {
+  long duracion;
+  int distancia;
+
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  duracion = pulseIn(echoPin, HIGH);
+  distancia = duracion * 0.034 / 2;
+
+  if (distancia < 50) {
+    int frecuencia = map(distancia, 0, 50, 2000, 200);
+    tone(buzzer, frecuencia);
+  } else {
+    noTone(buzzer);
+  }
+
+  delay(100);
+}
+``` 
