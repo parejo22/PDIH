@@ -98,6 +98,8 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
      
      Por último, se ejecuta `sudo rmmod hello`
      
-     resultado:
+     resultado: Devuelve el mensaje de Goodbye que podemos ver en la terminal situada a la izquierda
      
      <img width="1619" height="574" alt="image" src="https://github.com/user-attachments/assets/9d5b80a4-fe4d-4207-8aa0-9c4316c08f94" />
+    
+     
