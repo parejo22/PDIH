@@ -46,6 +46,7 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
    `cd ~/lkm_test`
    
 7. Código hello.c y makefile
+   
    Creamos los ficheros con `nano` como resultado tenemos:
    
    [hello.c](https://github.com/parejo22/PDIH/blob/main/Seminarios/S_LKM/hello.c)
