@@ -1,5 +1,5 @@
 
-# Seminario: Módulos cargables del Kernel (LKM)
+# Seminario: Módulos cargables del kernel (LKM)
 
 ---
 
@@ -20,12 +20,12 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
 ### Objetivos
   
 - Conocer cómo funciona el sistema de módulos cargables del kernel de Linux
-- Hacer un módulo sencillo.
+- Realizar un módulo sencillo.
     
 ---
 ## 1. Preparación del sistema para construir LKMs
 
-1. Comprobar el kernel:
+1. Comprobar la versión del kernel:
    
    `uname -r`
    
@@ -39,25 +39,25 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
    
    `sudo apt-get install linux-headers-$(uname -r)`
    
-5. Creo un directorio aislado para trabajar el seminario
+5. Se crea un directorio aislado para realizar el seminario
    
    `mkdir ~/lkm_test`
    
    `cd ~/lkm_test`
    
-7. Código hello.c y makefile
+7. Código hello.c y Makefile
    
-   Creamos los ficheros con `nano` como resultado tenemos:
+   Se crean los ficheros con nano. Como resultado, se obtiene:
    
    [hello.c](https://github.com/parejo22/PDIH/blob/main/Seminarios/S_LKM/hello.c)
 
    [Makefile](https://github.com/parejo22/PDIH/blob/main/Seminarios/S_LKM/Makefile)
    
-9. Ejecucion
+9. Ejecución
     
    - Compilación
      
-     Hacemos `make` y vemos como se crea hello.ko
+     Se ejecuta `make` y se observa cómo se crea el archivo hello.ko.
      
      <img width="1518" height="498" alt="image" src="https://github.com/user-attachments/assets/f2b3f11f-2913-4dd4-953b-afc88e4145ff" />
 
@@ -65,11 +65,11 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
      
      Para ver los logs en otra terminal ejecutamos:
      
-     `sudo dmesg | tail` justo despues de ejecutar los comandos de carga y descarga del módulo.
+     `sudo dmesg | tail` justo después de ejecutar los comandos de carga y descarga del módulo.
      
    - Carga del módulo
      
-     Ahora hacemos
+     A continuación, se ejecuta:
      
      `sudo insmod hello.ko`
      
@@ -80,13 +80,13 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
      
    - Comprobación
      
-     Para comprobar usamos `lsmod | grep hello`
+     Para comprobar, se utiliza: `lsmod | grep hello`
      
      <img width="812" height="574" alt="image" src="https://github.com/user-attachments/assets/71874a65-b563-494e-a76a-1cc66d877eb6" />
      
    - Datos
      
-     Podemos ver la información del módulo con:
+     Se puede ver la información del módulo con:
      
       ` modinfo hello.ko `
      
@@ -94,7 +94,7 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
 
    - Descarga del módulo
      
-     Para terminar `sudo rmmod hello`
+     Por último, se ejecuta `sudo rmmod hello`
      
      resultado:
      
