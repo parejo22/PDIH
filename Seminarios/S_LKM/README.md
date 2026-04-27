@@ -47,9 +47,9 @@ Los módulos se ejecutan en el espacio del kernel, mientras que las aplicaciones
    
 7. Código hello.c y Makefile
    
-El siguiente código lo ha proporcionado el profesor como ejemplo base de un módulo cargable del kernel. A partir de este ejemplo se puede ver la estructura básica de un LKM en Linux, con sus funciones de inicialización y de limpieza del módulo, además del uso de printk para poder enviar mensajes a los logs del sistema.
+  El siguiente código lo ha proporcionado el profesor como ejemplo base de un módulo cargable del kernel. A partir de este ejemplo se puede ver la estructura básica de un LKM en Linux, con sus funciones de inicialización y de limpieza del módulo, además del uso de printk para poder enviar mensajes a los logs del sistema.
 
-Gracias a este ejemplo se entiende cómo se registra un módulo en el kernel y también cómo se puede modificar su comportamiento mediante el uso de module_param.
+  Gracias a este ejemplo se entiende cómo se registra un módulo en el kernel y también cómo se puede modificar su comportamiento mediante el uso de module_param.
    
    [hello.c](https://github.com/parejo22/PDIH/blob/main/Seminarios/S_LKM/hello.c)
 
