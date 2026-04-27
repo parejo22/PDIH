@@ -1,1 +1,78 @@
 
+# Seminario 2
+
+## Ejercicio 1: Realizar un programa en lenguaje C que llame a la función de cambio de modo de vídeo y comprobar su funcionamiento.
+### Código
+
+```c
+#include <stdio.h>
+#include <dos.h>
+
+void cambiar_modo_video(unsigned char modo){
+    union REGS regs;
+
+    regs.h.ah = 0x00;   
+    regs.h.al = modo;   // Modo de video 
+
+    int86(0x10, &regs, &regs);  // Llamada a la interrupción 10h
+}
+
+int main(){
+
+    printf("Cambiando modo de video...\n");
+
+    cambiar_modo_video(0x13);   
+
+    printf("Modo de video cambiado.\n");
+
+    return 0;
+}
+```
+En este ejemplo para cambiar al tipo gráfico he utilizado el ultimo modo AL =13h que corresponde con la resolución 320x200 y disponde de 256 colores.
+### Compilación y ejecución
+<img width="1031" height="351" alt="image" src="https://github.com/user-attachments/assets/20fe4d0c-e3b0-430e-9622-4c2e588fef14" />
+<img width="1030" height="677" alt="image" src="https://github.com/user-attachments/assets/4535cb38-3b07-4519-be66-9b32c12f7086" />
+
+## Ejercicio 2:Realizar un programa en lenguaje C que llame a la función de interrupción correspondiente a la lectura de caracteres desde teclado. 
+### Código
+
+```c
+#include <stdio.h>
+#include <dos.h>
+
+int mi_gettecla(){
+    union REGS inregs, outregs;
+    int tecla;
+    inregs.h.ah = 1;
+    int86(0x21, &inregs, &outregs);
+    tecla = outregs.h.al;
+    return tecla;
+}
+
+void mi_puttecla(int c){
+    union REGS inregs, outregs;
+    inregs.h.ah = 2;
+    inregs.h.dl = c;
+
+    int86(0x21, &inregs, &outregs);
+}
+
+void salir(){
+    union REGS inregs, outregs;
+    inregs.x.ax = 0x4c00;
+    int86(0x21, &inregs, &outregs);
+}
+
+int main(){
+    int tmp;
+    printf("\nPulsa una tecla: ");
+    tmp = mi_gettecla();
+    printf("\nTecla pulsada: ");
+    mi_puttecla(tmp);
+
+    return 0;
+}
+}
+```
+### Compilación y ejecución
+<img width="1028" height="681" alt="image" src="https://github.com/user-attachments/assets/a933683c-7371-46ab-8e4f-a3574ca9a13d" />
