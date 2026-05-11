@@ -48,6 +48,7 @@ Ejemplo de montaje sin pantalla lcd
 ## Paso 3: Programación
 
 [Código **sin** pantalla lcd](https://github.com/parejo22/PDIH/blob/main/Proyecto_Arduino/pr_sinlcd.c)
+
 [Código **con** pantalla lcd](https://github.com/parejo22/PDIH/blob/main/Proyecto_Arduino/pr_lcd.c)
 
 ## Paso 4: Prueba del sistema
@@ -59,3 +60,23 @@ Ejemplo de montaje sin pantalla lcd
 <img width="1313" height="921" alt="image" src="https://github.com/user-attachments/assets/0e62622c-8945-40e9-8898-21ef5b9c388d" />
 
 
+## Paso 5: Añadir LCD
+
+LCD 1 (GND)  → GND Arduino
+
+LCD 2 (VCC)  → 5V Arduino
+
+LCD 3 (VO)   → GND Arduino
+
+LCD 4 (RS)   → pin 12
+
+LCD 5 (RW)   → GND Arduino
+LCD 6 (E)    → pin 13
+
+LCD 11 (D4)  → pin 6
+LCD 12 (D5)  → pin 7
+LCD 13 (D6)  → A1
+LCD 14 (D7)  → A2
+
+LCD 15 (LED+) → 5V Arduino
+LCD 16 (LED-) → GND Arduino
