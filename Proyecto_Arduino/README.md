@@ -6,12 +6,19 @@ Este proyecto consiste en un juego de reflejos donde el jugador debe presionar e
 ===
 
 ## Paso 1: Recolección de materiales
+
 - 1 Arduino UNO
+  
 - 4 LEDs
+  
 - 4 resistencias de 220Ω
+  
 - 4 pulsadores (botones)
+  
 - 1 pantalla LCD 16x2
+  
 - Cables (jumper wires)
+  
 - Protoboard (breadboard)
 
 ## Paso 2: Montaje del circuito (Los pines pueden variar no tienen que ser exactamente los mismos)
@@ -20,8 +27,11 @@ Este proyecto consiste en un juego de reflejos donde el jugador debe presionar e
 Conecta cada LED con una resistencia:
 
 LED 1 → pin 9
+
 LED 2 → pin 10
+
 LED 3 → pin 11
+
 LED 4 → pin 12
 
 El lado corto del LED va a GND.
@@ -31,8 +41,11 @@ Pulsadores
 Se usará INPUT_PULLUP (sin resistencias externas):
 
 Botón 1 → pin 2
+
 Botón 2 → pin 3
+
 Botón 3 → pin 4
+
 Botón 4 → pin 5
 
 Cada botón:
@@ -62,21 +75,30 @@ Ejemplo de montaje sin pantalla lcd
 
 ## Paso 5: Añadir LCD
 
-LCD 1 (GND)  → GND Arduino
+LCD 1 (GND)  → GND 
 
-LCD 2 (VCC)  → 5V Arduino
+LCD 2 (VCC)  → 5V
 
-LCD 3 (VO)   → GND Arduino
+LCD 3 (VO)   → GND 
 
 LCD 4 (RS)   → pin 12
 
-LCD 5 (RW)   → GND Arduino
+LCD 5 (RW)   → GND 
+
 LCD 6 (E)    → pin 13
 
 LCD 11 (D4)  → pin 6
+
 LCD 12 (D5)  → pin 7
+
 LCD 13 (D6)  → A1
+
 LCD 14 (D7)  → A2
 
-LCD 15 (LED+) → 5V Arduino
-LCD 16 (LED-) → GND Arduino
+LCD 15 (LED+) → 5V  con resistencia de 220Ω
+
+LCD 16 (LED-) → GND 
+
+## Montaje:
+
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/28d51af4-07b8-4f00-9af0-e10172b2a7f4" />
