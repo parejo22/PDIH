@@ -99,6 +99,14 @@ LCD 15 (LED+) → 5V  con resistencia de 220Ω
 
 LCD 16 (LED-) → GND 
 
-## Montaje:
+## Montaje lcd y videos del funcionamiento:
 
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/28d51af4-07b8-4f00-9af0-e10172b2a7f4" />
+
+[Video explicativo(sin lcd)](https://youtube.com/shorts/Hk1ZhrQx1CY?feature=share )
+
+[Video con la lcd](https://youtube.com/shorts/Lu5t2Zaz1d4?feature=share)
+
+
+
+
