@@ -47,8 +47,8 @@ Ejemplo de montaje sin pantalla lcd
 
 ## Paso 3: Programación
 
-[Código **sin** pantalla lcd]()
-[Código **con** pantalla lcd]()
+[Código **sin** pantalla lcd](https://github.com/parejo22/PDIH/blob/main/Proyecto_Arduino/pr_sinlcd.c)
+[Código **con** pantalla lcd](https://github.com/parejo22/PDIH/blob/main/Proyecto_Arduino/pr_lcd.c)
 
 ## Paso 4: Prueba del sistema
 - Sube el código al Arduino
