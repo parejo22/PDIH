@@ -28,7 +28,7 @@ El lado corto del LED va a GND.
 
 Pulsadores
 
-Usaremos INPUT_PULLUP (sin resistencias externas):
+Se usará INPUT_PULLUP (sin resistencias externas):
 
 Botón 1 → pin 2
 Botón 2 → pin 3
@@ -42,20 +42,20 @@ Otro lado → GND
 
 ### Pantalla LCD (opcional en primera versión)
 
-Puedes añadirla después para mostrar información del juego.
-
 Ejemplo de montaje sin pantalla lcd
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/3095c158-602d-40b3-84f0-ca82ae748aac" />
 
 ## Paso 3: Programación
 
+[Código **sin** pantalla lcd]()
+[Código **con** pantalla lcd]()
 
 ## Paso 4: Prueba del sistema
 - Sube el código al Arduino
 - Herramientas → Monitor Serie (Aquí veremos la salida del juego)
-- Para comenzar el juego, pulsa todos los pulsadores
+- Para comenzar el juego, pulsa todos los pulsadores, este paso sirve para comprobar que todos los botones funcionan correctamente.
 - Comprobar que todos los tipos de puntuación van bien: x>420 ns = 1p, x<420 =2p, x<275=3p y error -1
-- Al finalizar te mostrará tu puntuación
+- Comprobado todo,¡Es hora de jugar! Al finalizar te mostrará tu puntuación
 <img width="1313" height="921" alt="image" src="https://github.com/user-attachments/assets/0e62622c-8945-40e9-8898-21ef5b9c388d" />
 
 
