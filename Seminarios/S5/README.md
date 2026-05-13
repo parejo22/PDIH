@@ -16,6 +16,38 @@
 ---
 
 ## Ejercicio: Análisis y Manipulación de Sonido
+
 En este ejercicio se cargan dos archivos de sonido, se analiza su cabecera y se unen en un solo archivo.
 
 ### [Código en R](https://github.com/parejo22/PDIH/edit/main/Seminarios/S5/S_ejer1.R)
+
+Código explicado paso a paso:
+
+1. Instalación y carga de librerías:
+  ```R
+  # install.packages('tuneR', dep=TRUE)
+  # install.packages('seewave', dep=TRUE)
+  # install.packages('soundgen', dep=TRUE)
+  library(tuneR)
+  library(seewave)
+  library(audio)
+  ```
+
+2. Para establecer el path a nuestra carpeta de trabajo se utiliza `setwd()` 
+  <img width="733" height="53" alt="image" src="https://github.com/user-attachments/assets/0eb9530f-192a-4074-a274-ef9874705257" />
+
+3. Se cargan los archivos de sonido MP3 o WAV con `readWave()`
+   <img width="735" height="58" alt="image" src="https://github.com/user-attachments/assets/4f4cc77c-d629-477e-8021-d50076765c58" />
+   
+4. Para mostrar la forma de onda de los perro.wav y gato.wav se usa `plot`
+   <img width="1840" height="752" alt="image" src="https://github.com/user-attachments/assets/4aa44178-d773-4e8e-abb5-5fe7408dd2ea" />
+   
+   <img width="1840" height="752" alt="image" src="https://github.com/user-attachments/assets/04200287-47e4-4bac-8773-44245c6475d2" />
+ 
+5. Inspeccionamos y mostramos los campos del archivo de sonido usando `str()`
+  <img width="712" height="287" alt="image" src="https://github.com/user-attachments/assets/12077942-576c-4cf2-b8a0-8a6d0a4dfa0f" />
+
+6. 
+   
+
+
