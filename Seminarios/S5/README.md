@@ -48,6 +48,7 @@ Código explicado paso a paso:
    <img width="712" height="287" alt="image" src="https://github.com/user-attachments/assets/12077942-576c-4cf2-b8a0-8a6d0a4dfa0f" />
 
 6. Para juntar los sonidos del perro y el gato usamos `pastew()`.
+   
    <img width="486" height="52" alt="image" src="https://github.com/user-attachments/assets/76a5a909-698b-4fd3-b8c3-da93aaa307a1" />
 
     Aunque en este caso el proceso es directo, normalmente no lo sería. Para que dos archivos de sonido se puedan pegar, tienen que tener la misma tasa de muestreo, en el caso del perro y el gato usando `str()` coinciden en 44.1 KHz. 
