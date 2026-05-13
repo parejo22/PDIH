@@ -34,7 +34,7 @@ Código explicado paso a paso:
   ```
 
 2. Para establecer el path a nuestra carpeta de trabajo se utiliza `setwd()` 
-  <img width="733" height="53" alt="image" src="https://github.com/user-attachments/assets/0eb9530f-192a-4074-a274-ef9874705257" />
+   <img width="733" height="53" alt="image" src="https://github.com/user-attachments/assets/0eb9530f-192a-4074-a274-ef9874705257" />
 
 3. Se cargan los archivos de sonido MP3 o WAV con `readWave()`
    <img width="735" height="58" alt="image" src="https://github.com/user-attachments/assets/4f4cc77c-d629-477e-8021-d50076765c58" />
@@ -45,9 +45,22 @@ Código explicado paso a paso:
    <img width="1840" height="752" alt="image" src="https://github.com/user-attachments/assets/04200287-47e4-4bac-8773-44245c6475d2" />
  
 5. Inspeccionamos y mostramos los campos del archivo de sonido usando `str()`
-  <img width="712" height="287" alt="image" src="https://github.com/user-attachments/assets/12077942-576c-4cf2-b8a0-8a6d0a4dfa0f" />
+   <img width="712" height="287" alt="image" src="https://github.com/user-attachments/assets/12077942-576c-4cf2-b8a0-8a6d0a4dfa0f" />
 
-6. 
+6. Para juntar los sonidos del perro y el gato usamos `pastew()`.
+  <img width="486" height="52" alt="image" src="https://github.com/user-attachments/assets/76a5a909-698b-4fd3-b8c3-da93aaa307a1" />
+
+  Aunque en este caso el proceso es directo, normalmente no lo sería. Para que dos archivos de sonido se puedan pegar, tienen que tener la misma tasa de muestreo, en el caso del perro y el gato usando `str()` coinciden en 44.1 KHz. 
+
+  Si un audio estuviera a una frecuencia distinta, utilizaríamos `resamp()` para igualarlos antes de unirlos. Ejemplo de uso:
+```r
+gato_arreglado <- resamp(gato, f = 44100, output = "Wave")
+```
+7. Guardamos el resultado en el formato que deseemos con la función `writeWave`
+   <img width="478" height="38" alt="image" src="https://github.com/user-attachments/assets/83f53eeb-250d-455f-95ad-9a0d845153ef" />
+
+
+
    
 
 
