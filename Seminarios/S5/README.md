@@ -15,7 +15,7 @@
 
 ---
 
-## Ejercicio 1: Análisis y Manipulación de Sonido
+## Ejercicio: Análisis y Manipulación de Sonido
 En este ejercicio se cargan dos archivos de sonido, se analiza su cabecera y se unen en un solo archivo.
 
 ### [Código en R](https://github.com/parejo22/PDIH/edit/main/Seminarios/S5/S_ejer1.R)
