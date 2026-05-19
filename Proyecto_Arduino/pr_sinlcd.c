@@ -7,7 +7,7 @@ int rounds = 10;
 unsigned long startTime;
 unsigned long reactionTime;
 
-// 🔹 función para esperar a que todos los botones estén pulsados
+//  función para esperar a que todos los botones estén pulsados
 void waitForStart() {
   Serial.println("\nPulsa TODOS los botones para empezar...");
 
