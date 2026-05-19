@@ -42,7 +42,7 @@ void setup() {
 
 void loop() {
 
-  waitForStart();  // 👈 espera inicio manual
+  waitForStart();  //  espera inicio manual
 
   score = 0;
 
