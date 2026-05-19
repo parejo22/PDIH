@@ -24,10 +24,10 @@ espeak -v es "Parejo" -w apellido.wav
 Utilizando la función `readWave()`, se cargaron los archivos en memoria. Posteriormente, se empleó la función genérica `plot()` para visualizar de forma separada los picos y valles de amplitud en el dominio del tiempo para ambos audios.
 
 * **Gráfico de la Onda del Nombre:**
-  ![Forma de Onda Nombre]([])
+  ![Forma de Onda Nombre]([https://github.com/parejo22/PDIH/blob/main/Practicas/P5/nombre.png])
 
 * **Gráfico de la Onda del Apellido:**
-  ![Forma de Onda Apellido]([])
+  ![Forma de Onda Apellido]([https://github.com/parejo22/PDIH/blob/main/Practicas/P5/apellido.png])
   
   #### Ejercicio 3: Información de las cabeceras de sonido
 Al ejecutar la función estructural `str()`, se identificó una incompatibilidad técnica inicial crítica entre ambos archivos:
@@ -45,7 +45,7 @@ De acuerdo con lo aprendido en los seminarios, dos objetos de tipo `Wave` no se 
 La señal combinada fue reproducida mediante `listen()` y mostrada en forma de gráfico usando la misma herramienta que en el ejercicio 2. Por último, se almacena bajo el nombre  `basico.wav` usando `writeWave()`.
 
 * **Forma de onda resultante integrada (Nombre + Apellido):**
-  ![Forma de Onda Combinada]()
+  ![Forma de Onda Combinada](https://github.com/parejo22/PDIH/blob/main/Practicas/P5/nom-ape.png)
 
   #### Ejercicio 7: Aplicación de filtro de frecuencia
 Se procesa el audio unificado a través de un filtro de frecuencia de tipo **banda eliminada** usando la función `bwfilter()`, configurando `bandpass = FALSE`.Se eliminó por completo el rango superior situado entre los **10.000 Hz y 20.000 Hz**.El resultado limpio fue exportado como `filtrado.wav`.
