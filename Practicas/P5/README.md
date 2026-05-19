@@ -5,7 +5,7 @@ Los objetivos de esta práctica consisten en:
 * Conocer la estructura de un fichero típico de sonido (especialmente archivos en formato WAV).
 * Entender y operar con los parámetros fundamentales de una señal de sonido utilizando el lenguaje R y su entorno RStudio.
 
-[Código]()
+[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P5/Practica5.R)
 
 #### Ejercicio 1: Creación de ficheros de sonido 
 
