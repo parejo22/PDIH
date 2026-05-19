@@ -24,10 +24,10 @@ espeak -v es "Parejo" -w apellido.wav
 Utilizando la función `readWave()`, se cargaron los archivos en memoria. Posteriormente, se empleó la función genérica `plot()` para visualizar de forma separada los picos y valles de amplitud en el dominio del tiempo para ambos audios.
 
 * **Gráfico de la Onda del Nombre:**
-  ![Forma de Onda Nombre]([https://github.com/parejo22/PDIH/blob/main/Practicas/P5/nombre.png])
+  ![Forma de Onda Nombre](https://github.com/parejo22/PDIH/blob/main/Practicas/P5/nombre.png)
 
 * **Gráfico de la Onda del Apellido:**
-  ![Forma de Onda Apellido]([/apellido.png])
+  ![Forma de Onda Apellido](https://github.com/parejo22/PDIH/blob/main/Practicas/P5/apellido.png)
   
   #### Ejercicio 3: Información de las cabeceras de sonido
 Al ejecutar la función estructural `str()`, se identificó una incompatibilidad técnica inicial crítica entre ambos archivos:
