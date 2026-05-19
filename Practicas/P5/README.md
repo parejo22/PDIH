@@ -27,7 +27,7 @@ Utilizando la función `readWave()`, se cargaron los archivos en memoria. Poster
   ![Forma de Onda Nombre]([https://github.com/parejo22/PDIH/blob/main/Practicas/P5/nombre.png])
 
 * **Gráfico de la Onda del Apellido:**
-  ![Forma de Onda Apellido]([https://github.com/parejo22/PDIH/blob/main/Practicas/P5/apellido.png])
+  ![Forma de Onda Apellido]([/apellido.png])
   
   #### Ejercicio 3: Información de las cabeceras de sonido
 Al ejecutar la función estructural `str()`, se identificó una incompatibilidad técnica inicial crítica entre ambos archivos:
