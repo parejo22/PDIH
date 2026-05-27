@@ -63,6 +63,10 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 -minNeighbors: define cuántas coincidencias deben existir para considerar una detección válida.
 -minSize: evita detectar objetos demasiado pequeños que podrían ser falsos positivos.
 
+#### Resultado:
+
+
+
 ### 2.Reconocimiento de caras de personas en vídeos
 ### 3.Reconocimiento de caras de gatos en vídeos
 ### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
