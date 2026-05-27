@@ -10,7 +10,7 @@
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python 3
 - OpenCV (`cv2`)
@@ -47,7 +47,7 @@ Para resolver el problema se utiliza OpenCV junto con un modelo ya entrenado bas
 
 El archivo utilizado ` wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_alt.xml ` actúa como el detector principal.
 
-[Código]()
+[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/ejemplo-fotos-1.py)
 Primero se carga la imagen que se quiere analizar. Esta imagen se simplifica convirtiéndola a escala de grises, ya que el color no aporta información relevante para la detección y solo aumenta el coste de procesamiento.
 
 Después, el modelo analiza la imagen en diferentes escalas buscando patrones que coincidan con una cara humana. Este análisis se realiza con la función detectMultiScale, que permite recorrer la imagen de forma adaptativa.
