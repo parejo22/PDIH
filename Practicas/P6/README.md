@@ -95,8 +95,8 @@ Para conseguir una detección más estable se utiliza un modelo extra para detec
  `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_profileface.xml`
  Resultado:
  Sin perfil:
- ![Sin perfil]()
+ ![Sin perfil](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej2-1.png)
  Con perfil:
-![Con perfil]()
+![Con perfil](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej2-2.png)
 ### 3.Reconocimiento de caras de gatos en vídeos
 ### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
