@@ -40,14 +40,13 @@ pip install opencv-python
 
 ### 1.Reconocimiento de caras de personas en imágenes
 
+[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer1.py)
 
 Este ejercicio consiste en implementar una aplicación sencilla capaz de localizar caras humanas dentro de una imagen y resaltarlas visualmente.
 
 Para resolver el problema se utiliza OpenCV junto con un modelo ya entrenado basado en Haar Cascades. Este tipo de modelo no aprende durante la ejecución, sino que ya contiene patrones faciales predefinidos que permiten reconocer estructuras similares a caras.
 
 El archivo utilizado ` wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_alt.xml ` actúa como el detector principal.
-
-[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer1.py)
 
 Primero se carga la imagen que se quiere analizar. Esta imagen se simplifica convirtiéndola a escala de grises, ya que el color no aporta información relevante para la detección y solo aumenta el coste de procesamiento.
 
@@ -74,6 +73,8 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 
 
 ### 2.Reconocimiento de caras de personas en vídeos
+
+[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer2.py)
 
 En este segundo ejercicio se amplía el funcionamiento del programa anterior para trabajar en tiempo real sobre un vídeo en lugar de una imagen estática.
 
@@ -107,6 +108,8 @@ Para conseguir una detección más estable se utiliza un modelo extra para detec
 
 ### 3.Reconocimiento de caras de gatos en vídeos
 
+[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer3.py)
+
 A diferencia de los ejercicios anteriores, en este caso no se utiliza un modelo de personas.
 
 El archivo haarcascade_frontalcatface_extended.xml contiene un clasificador especializado en reconocimiento de caras de gatos, entrenado específicamente para detectar características faciales felinas.
@@ -131,3 +134,26 @@ Con interferencias:
 ![Con](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej3-1.png)
 
 ### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
+
+[Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer4.py)
+
+En este último ejercicio se implementa un sistema de detección más completo que combina varios clasificadores Haar Cascade para identificar diferentes partes del cuerpo humano en un vídeo en tiempo real.
+
+Se han empleado varios clasificadores preentrenados:
+
+- Cara frontal: haarcascade_frontalface_default.xml
+  
+- Cara de perfil: haarcascade_profileface.xml
+  
+- Cuerpo completo: haarcascade_fullbody.xml
+
+Durante las pruebas era evidente que el modelo fullbody no ofrece resultados totalmente fiables en entornos de vídeo reales, por ello en un primer momento pense en mezclar este modelo con el modelo upperbody, pero al estar entrenados con imagenes parecidas he notado que el modelo upperbody funciona peor en terminos de falsos positivos.
+
+Solución:
+
+Además de los clasificadores Haar, se incorpora el detector HOG de OpenCV, que permite la detección de personas completas con mayor porcentaje de exito.
+
+Resultado:
+
+![Con](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej4-1.png)
+
