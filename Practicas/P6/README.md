@@ -69,7 +69,7 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 ![Sin cambiar el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-2.png)
 
     scaleFactor=1.05,
-    minNeighbors=1
+    minNeighbors=1 //Está configuración nos da más rostros, pero obtenemos más falsos positivos.
 ![CAmbiando el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-3.png)
 
 
