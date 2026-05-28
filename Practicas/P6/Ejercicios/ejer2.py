@@ -2,7 +2,7 @@ import cv2
 
 # Cargamos clasificadores para cara y ojos
 modeloCara = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-modeloOjo  = cv2.CascadeClassifier('haarcascade_profileface.xml')
+modeloPerfil = cv2.CascadeClassifier('haarcascade_profileface.xml')
 
 # abrimos el flujo de vídeo desde la cámara o desde un vídeo
 #camara = cv2.VideoCapture(-1)
@@ -17,7 +17,7 @@ while camara.isOpened():
         # Dibujamos rectángulo en las caras detectadas
         cv2.rectangle(img, (x,y), (x + w, y + h), (255, 0 , 0), 3)
 
-    eyes = modeloOjo.detectMultiScale(color, 1.3, 4)
+    eyes = modeloPerfil.detectMultiScale(color, 1.3, 4)
     for (x, y , w ,h) in eyes:
         # Dibujamos rectángulo en los ojos
         cv2.rectangle(img, (x,y), (x + w, y + h), (0, 255 , 0), 3)
