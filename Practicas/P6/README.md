@@ -92,6 +92,7 @@ Por tanto:
 -El programa necesita un bucle continuo para capturar y mostrar vídeo
 
 Para conseguir una detección más estable se utiliza un modelo extra para detectar perfiles de personas:
+
  `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_profileface.xml`
  
  Resultado:
@@ -105,4 +106,14 @@ Para conseguir una detección más estable se utiliza un modelo extra para detec
 ![Con perfil](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej2-2.png)
 
 ### 3.Reconocimiento de caras de gatos en vídeos
+
+A diferencia de los ejercicios anteriores, en este caso no se utiliza un modelo de personas.
+
+El archivo haarcascade_frontalcatface_extended.xml contiene un clasificador especializado en reconocimiento de caras de gatos, entrenado específicamente para detectar características faciales felinas.
+
+Gracias a este modelo es posible detectar gatos incluso cuando aparecen varios en pantalla.
+
+`wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface_extended.xml`
+
+
 ### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
