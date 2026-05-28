@@ -117,6 +117,8 @@ Gracias a este modelo es posible detectar gatos incluso cuando aparecen varios e
 `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface.xml`
 
 En el video usado los gatos estan mirando a un platano que se pone en primer plano, lo que nos sirve para ver que porcentaje de la cara necesita ver nuestros modelos para detectar la cara de los gatos.
+Modelo extended: Azul
+Modelo standard: Verde
 
 Sin interferencias:
  
