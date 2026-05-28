@@ -61,12 +61,16 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 
 -scaleFactor: controla cómo se reduce la imagen en cada iteración del análisis. Valores más bajos aumentan la precisión.
 -minNeighbors: define cuántas coincidencias deben existir para considerar una detección válida.
--minSize: evita detectar objetos demasiado pequeños que podrían ser falsos positivos.
 
 #### Resultado:
-![Sin cambiar el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-1.png)
 
-![CAmbiando el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-2.png)
+    scaleFactor=1.1,
+    minNeighbors=6
+![Sin cambiar el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-2.png)
+
+    scaleFactor=1.05,
+    minNeighbors=1
+![CAmbiando el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-3.png)
 
 
 ### 2.Reconocimiento de caras de personas en vídeos
