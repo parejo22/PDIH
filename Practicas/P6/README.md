@@ -64,7 +64,7 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 -minSize: evita detectar objetos demasiado pequeños que podrían ser falsos positivos.
 
 #### Resultado:
-
+ https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-1.png 
 
 
 ### 2.Reconocimiento de caras de personas en vídeos
