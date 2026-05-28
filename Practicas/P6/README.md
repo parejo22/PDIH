@@ -38,7 +38,7 @@ pip install opencv-python
 ```
 ## Ejercicios
 
-### 1.Reconocimiento de caras de personas en imágenes
+### 1. Reconocimiento de caras de personas en imágenes
 
 [Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer1.py)
 
@@ -68,11 +68,11 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 ![Sin cambiar el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-2.png)
 
     scaleFactor=1.05,
-    minNeighbors=1 //Está configuración nos da más rostros, pero obtenemos más falsos positivos.
-![CAmbiando el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-3.png)
+    minNeighbors=1 //Esta configuración nos da más rostros, pero obtenemos más falsos positivos.
+![Cambiando el scaleFactor](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej1-3.png)
 
 
-### 2.Reconocimiento de caras de personas en vídeos
+### 2. Reconocimiento de caras de personas en vídeos
 
 [Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer2.py)
 
@@ -88,9 +88,9 @@ La principal diferencia es que en este caso no se trabaja sobre una única image
 
 Por tanto:
 
--La detección se ejecuta muchas veces por segundo
--El rendimiento es más importante
--El programa necesita un bucle continuo para capturar y mostrar vídeo
+- La detección se ejecuta muchas veces por segundo
+- El rendimiento es más importante
+- El programa necesita un bucle continuo para capturar y mostrar vídeo
 
 Para conseguir una detección más estable se utiliza un modelo extra para detectar perfiles de personas:
 
@@ -106,7 +106,7 @@ Para conseguir una detección más estable se utiliza un modelo extra para detec
  
 ![Con perfil](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej2-2.png)
 
-### 3.Reconocimiento de caras de gatos en vídeos
+### 3. Reconocimiento de caras de gatos en vídeos
 
 [Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer3.py)
 
@@ -119,7 +119,7 @@ Gracias a este modelo es posible detectar gatos incluso cuando aparecen varios e
 `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface_extended.xml`
 `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface.xml`
 
-En el video usado los gatos estan mirando a un platano que se pone en primer plano, lo que nos sirve para ver que porcentaje de la cara necesita ver nuestros modelos para detectar la cara de los gatos.
+En el video usado los gatos están mirando a un plátano que se pone en primer plano, lo que nos sirve para ver que porcentaje de la cara necesita ver nuestros modelos para detectar la cara de los gatos.
 
 - Modelo extended: Azul
 
@@ -127,13 +127,13 @@ En el video usado los gatos estan mirando a un platano que se pone en primer pla
 
 Sin interferencias:
  
- ![Sinl](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej3-2.png)
+ ![Sin](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej3-2.png)
  
 Con interferencias:
  
 ![Con](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej3-1.png)
 
-### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
+### 4. Reconocimiento de cuerpos y caras de personas en vídeos.
 
 [Código](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Ejercicios/ejer4.py)
 
@@ -147,11 +147,11 @@ Se han empleado varios clasificadores preentrenados:
   
 - Cuerpo completo: haarcascade_fullbody.xml
 
-Durante las pruebas era evidente que el modelo fullbody no ofrece resultados totalmente fiables en entornos de vídeo reales, por ello en un primer momento pense en mezclar este modelo con el modelo upperbody, pero al estar entrenados con imagenes parecidas he notado que el modelo upperbody funciona peor en terminos de falsos positivos.
+Durante las pruebas era evidente que el modelo fullbody no ofrece resultados totalmente fiables en entornos de vídeo reales, por ello en un primer momento pensé en mezclar este modelo con el modelo upperbody, pero al estar entrenados con imágenes parecidas he notado que el modelo upperbody funciona peor en términos de falsos positivos.
 
 Solución:
 
-Además de los clasificadores Haar, se incorpora el detector HOG de OpenCV, que permite la detección de personas completas con mayor porcentaje de exito.
+Además de los clasificadores Haar, se incorpora el detector HOG de OpenCV, que permite la detección de personas completas con mayor porcentaje de éxito.
 
 Resultado:
 
