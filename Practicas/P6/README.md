@@ -111,9 +111,19 @@ A diferencia de los ejercicios anteriores, en este caso no se utiliza un modelo 
 
 El archivo haarcascade_frontalcatface_extended.xml contiene un clasificador especializado en reconocimiento de caras de gatos, entrenado específicamente para detectar características faciales felinas.
 
-Gracias a este modelo es posible detectar gatos incluso cuando aparecen varios en pantalla.
+Gracias a este modelo es posible detectar gatos incluso cuando aparecen varios en pantalla, adicionalmente se ha utilizado el modelo sin extensión.
 
 `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface_extended.xml`
+`wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface.xml`
 
+En el video usado los gatos estan mirando a un platano que se pone en primer plano, lo que nos sirve para ver que porcentaje de la cara necesita ver nuestros modelos para detectar la cara de los gatos.
+
+Sin interferencias:
+ 
+ ![Sinl](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej3-2.png)
+ 
+Con interferencias:
+ 
+![Con](https://github.com/parejo22/PDIH/blob/main/Practicas/P6/Resultados/ej3-1.png)
 
 ### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
