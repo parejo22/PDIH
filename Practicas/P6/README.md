@@ -74,5 +74,29 @@ Dentro de la detección hay varios parámetros que influyen directamente en el r
 
 
 ### 2.Reconocimiento de caras de personas en vídeos
+
+En este segundo ejercicio se amplía el funcionamiento del programa anterior para trabajar en tiempo real sobre un vídeo en lugar de una imagen estática.
+
+Al igual que en el ejercicio anterior, cada frame se convierte a escala de grises para simplificar la información y mejorar el rendimiento del detector.
+
+Después, el clasificador Haar Cascade analiza cada imagen buscando patrones faciales. Cuando detecta una cara, se dibuja un rectángulo alrededor de ella y el resultado se muestra en pantalla en tiempo real.
+
+Este proceso se repite constantemente hasta que el usuario decide cerrar el programa.
+
+La principal diferencia es que en este caso no se trabaja sobre una única imagen, sino sobre una secuencia continua de fotogramas.
+
+Por tanto:
+
+-La detección se ejecuta muchas veces por segundo
+-El rendimiento es más importante
+-El programa necesita un bucle continuo para capturar y mostrar vídeo
+
+Para conseguir una detección más estable se utiliza un modelo extra para detectar perfiles de personas:
+ `wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_profileface.xml`
+ Resultado:
+ Sin perfil:
+ ![Sin perfil]()
+ Con perfil:
+![Con perfil]()
 ### 3.Reconocimiento de caras de gatos en vídeos
 ### 4.Reconocimiento de cuerpos y caras de personas en vídeos.
